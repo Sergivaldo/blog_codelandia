@@ -37,6 +37,7 @@ header{
 
 .container-search{
     padding: 5px;
+    width: 60vw;
     height: 11vh;
     display: flex;
     background: rgba(255, 255, 255, 0.2);
@@ -110,4 +111,44 @@ article{
     text-align: justify;
     font-size: 1.125em;
     color: #717171;
+}
+
+@media (max-width:600px){
+    header{
+        height: 32vh;
+    }
+
+    .container-search{
+        width: 80vw;
+        height: 7vh;
+    }
+
+    .container-logo{
+        width: 80vw;
+    }
+
+    .container-logo a{
+        font-size: 1.35em;
+    }
+
+    #search-input::placeholder{
+        font-size: 1em;
+    }
+
+    main{
+        padding-top: 70px;
+    }
+
+    article{
+        width: 85vw;
+    }
+
+    .title-article{
+        font-size: 1.225em;
+    }
+
+    .text-article{
+        font-size: 0.95em;
+    }
+    
 }
